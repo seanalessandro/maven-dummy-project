@@ -1,10 +1,12 @@
  
 pipeline {
-  
+
   agent any
 
   tools {
+    
     maven "jenkins-maven"
+    
   }
 
   stages { 
