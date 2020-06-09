@@ -7,14 +7,7 @@ pipeline {
         maven "jenkins-maven"
     }
  
-  stages {
-   
-    stage('SCM'){
-     steps {
-      checkout scm
-     }
-    }
-   
+  stages { 
     stage('TEST'){
       steps {
          sh 'mvn clean install compile test'
