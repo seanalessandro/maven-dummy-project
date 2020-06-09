@@ -9,7 +9,9 @@ pipeline {
     }
     stage('TEST'){
       steps {
-        sh 'mvn clean install compile test'
+       withMaven(mavenSettingsConfig: 'jenkins-maven'){
+         sh 'mvn clean install compile test'
+       }
       }
     }
   }
