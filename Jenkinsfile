@@ -18,13 +18,6 @@ pipeline {
       }
      
     }
-
-    stage('ECHO') {
-      steps{
-        sh 'echo "done!"'
-      }
-    }
-
   }
  
 }
