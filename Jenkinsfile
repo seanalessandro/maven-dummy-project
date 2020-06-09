@@ -6,7 +6,7 @@ pipeline {
   tools {
     
     maven "jenkins-maven"
-    
+
   }
 
   stages { 
@@ -17,6 +17,12 @@ pipeline {
         sh 'mvn clean install compile test'
       }
      
+    }
+
+    stage('ECHO') {
+      steps{
+        ECHO "Done!"
+      }
     }
 
   }
