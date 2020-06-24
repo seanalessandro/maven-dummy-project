@@ -5,7 +5,6 @@ package com.mycompany.app;
  */
 public class App
 {
-    //Testing Web-Hooks
     private final String message = "Hello World!";
 
     public App() {}
